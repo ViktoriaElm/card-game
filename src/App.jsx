@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import InstructionPopup from '../components/popups/InstructionPopup'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>Игра на развитие внимания</h1>
+      <h3>
+        Проверьте свою внимательность и попробуйте собрать все пары картинок, запоминая их расположение!
+      </h3>
+      <InstructionPopup />
     </>
   )
 }
 
 export default App
+
+// уровень 1 - 2 карты
+// уровень 2 - 4
+// уровень 3 - 6
+// уровень 4 - 8
+// уровень 5 - 10
+// уровень 6 - 12
+// уровень 7 - 14
+// уровень 8 - 16
+// уровень 9 - 18
+// уровень 10 - 20
