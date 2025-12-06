@@ -1,9 +1,26 @@
 
 import appStyles from './App.module.scss';
 import InstructionPopup from './components/popups/InstructionPopup.tsx';
+import GameFieldPopup from './components/popups/GameFieldPopup.tsx';
 import Button from './components/buttons/Button.tsx';
+import { useState } from 'react';
 
 export default function App() {
+  const [showInstruction, setShowInstruction] = useState(false);
+  const [showGame, setShowGame] = useState(false);
+
+  const handleShowPopup = () => {
+    setShowInstruction(true);
+  }
+
+  const handleClosePopup = () => {
+    setShowInstruction(false);
+    setShowGame(false);
+  };
+
+  const handleStartGame = () => {
+    setShowGame(true);
+  }
 
   return (
     <>
@@ -14,13 +31,29 @@ export default function App() {
       <div className={appStyles.mainPage__button_wrapper}>
         <Button
           className={appStyles.mainPage__button}
-        >Прочитать инструкцию</Button>
+          onClick={handleShowPopup}
+        >
+          Прочитать инструкцию
+        </Button>
         <Button
           className={appStyles.mainPage__button}
-        >Играть</Button>
+          onClick={handleStartGame}
+        >
+          Играть
+        </Button>
       </div>
 
-      <InstructionPopup />
+      {showInstruction &&
+        <InstructionPopup
+          closePopup={handleClosePopup}
+        />}
+
+      {showGame &&
+        <GameFieldPopup
+          closePopup={handleClosePopup}
+        />
+
+      }
     </>
   )
 }
