@@ -1,0 +1,52 @@
+.instructionPopup {
+
+    &__container {
+        display: flex;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50vw;
+        min-height: 30vw;
+        height: fit-content;
+        background-color: #474747;
+        padding: 20px 40px;
+        border-radius: 15px;
+    }
+
+    &__closeBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #868686;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        padding: 0;
+    }
+
+    &__startButton {
+
+        &_wrapper {}
+
+    }
+
+    &__h2,
+    &__h3,
+    &__h4,
+    &__description,
+    &__list {
+        text-align: left;
+
+        &_item {}
+    }
+
+    &__h4 {
+        margin-bottom: 0;
+    }
+
+}

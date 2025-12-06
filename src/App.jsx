@@ -1,21 +1,29 @@
 
-import './App.css'
-import InstructionPopup from '../components/popups/InstructionPopup'
+import appStyles from './App.module.scss';
+import InstructionPopup from './components/popups/InstructionPopup.tsx';
+import Button from './components/buttons/Button.tsx';
 
-function App() {
+export default function App() {
 
   return (
     <>
-      <h1>Игра на развитие внимания</h1>
+      <h1 className={appStyles.mainPage__title}>Игра на развитие внимания</h1>
       <h3>
         Проверьте свою внимательность и попробуйте собрать все пары картинок, запоминая их расположение!
       </h3>
+      <div className={appStyles.mainPage__button_wrapper}>
+        <Button
+          className={appStyles.mainPage__button}
+        >Прочитать инструкцию</Button>
+        <Button
+          className={appStyles.mainPage__button}
+        >Играть</Button>
+      </div>
+
       <InstructionPopup />
     </>
   )
 }
-
-export default App
 
 // уровень 1 - 2 карты
 // уровень 2 - 4

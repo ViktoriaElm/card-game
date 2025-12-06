@@ -1,0 +1,21 @@
+.mainPage {
+  &__title {
+    text-align: center;
+  }
+
+  &__button {
+    background-color: rgb(226, 226, 226);
+    color: black;
+    padding: 20px 40px;
+    font-size: 18px;
+
+    &_wrapper {
+      display: flex;
+      justify-content: center;
+      height: fit-content;
+      padding: 40px 0;
+      gap: 20px;
+    }
+  }
+
+}
