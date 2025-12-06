@@ -1,4 +1,4 @@
-.instructionPopup {
+.popup {
 
     &__container {
         display: flex;
@@ -9,12 +9,20 @@
         left: 50%;
         transform: translate(-50%, -50%);
         width: 50vw;
-        min-height: 30vw;
         height: fit-content;
         background-color: #474747;
-        padding: 20px 40px;
+        padding: 40px;
         border-radius: 15px;
-        z-index: 5;
+        z-index: 1;
+    }
+
+    &__cardContainer {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        height: fit-content;
+        justify-content: space-between
     }
 
     &__closeBtn {

@@ -1,4 +1,5 @@
-import gameFieldPopupStyles from "./InstructionPopup.module.scss";
+import popupStyles from "./popup.module.scss";
+import Card from "../cards/Card";
 
 interface GameFieldPopupProps {
     closePopup: () => void;
@@ -8,18 +9,33 @@ interface GameFieldPopupProps {
 export default function GameFieldPopup({ closePopup, children }: GameFieldPopupProps) {
 
     return (
-        <div className={gameFieldPopupStyles.instructionPopup__container}>
+        <div className={`${popupStyles.popup__container} ${popupStyles.popup__container_cardStyles}`}>
 
             <button
-                className={gameFieldPopupStyles.instructionPopup__closeBtn}
+                className={popupStyles.popup__closeBtn}
                 onClick={closePopup}
             >
                 X
             </button>
 
-            <h2 className={gameFieldPopupStyles.instructionPopup__h2}>
+            <h2 className={popupStyles.popup__h2}>
                 Уровень: {children}
             </h2>
+
+            <div className={`${popupStyles.popup__cardContainer}`}>
+                <Card src="public/zebra.jpg"/>
+                <Card src="public/fox.jpg"/>
+                <Card src="public/kenguru.jpg"/>
+                <Card src="public/fox.jpg"/>
+                <Card src="public/gepard.jpg"/>
+                <Card src="public/emu.jpg"/>
+                <Card src="public/lion.jpg"/>
+                <Card src="public/zebra.jpg"/>
+                <Card src="public/emu.jpg"/>
+                <Card src="public/kenguru.jpg"/>
+                <Card src="public/gepard.jpg"/>
+                <Card src="public/lion.jpg"/>
+            </div>
 
         </div>
     )
