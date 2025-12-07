@@ -10,12 +10,12 @@ export default function InstructionPopup({ closePopup, startGame }: InstructionP
     return (
         <div className={popupStyles.popup__container}>
 
-            <button
+            <span
                 className={popupStyles.popup__closeBtn}
                 onClick={closePopup}
             >
-                X
-            </button>
+                x
+            </span>
 
             <h2 className={popupStyles.popup__h2}>
                 Правила игры
