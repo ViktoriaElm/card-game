@@ -8,18 +8,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50vw;
+        max-width: 50vw;
+        width: fit-content;
         height: fit-content;
-        background-color: #474747;
+        background-color: #bebebe;
         padding: 40px;
         border-radius: 15px;
         z-index: 1;
+        color: #000000;
     }
 
     &__cardContainer {
         display: grid;
-        grid-template-rows: auto;
+        grid-template-rows: 1fr auto;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
         gap: 20px;
         height: fit-content;
         justify-content: space-between
@@ -27,13 +30,13 @@
 
     &__closeBtn {
         position: absolute;
-        top: 20px;
-        right: 20px;
-        color: #868686;
+        cursor: pointer;
+        top: 30px;
+        right: 23px;
         background-color: transparent;
         width: 50px;
         height: 50px;
-        font-size: 25px;
+        font-size: 35px;
         padding: 0;
     }
 
@@ -51,6 +54,11 @@
         text-align: left;
 
         &_item {}
+    }
+
+    &__h2 {
+        margin: 0 0 40px 0;
+        color: #1d1d1d;
     }
 
     &__h4 {
