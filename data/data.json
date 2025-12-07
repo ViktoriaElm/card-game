@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "src": "/images/air.jpg",
+        "alt": "airbender",
+        "category": "anime"
+    },
+    {
+        "id": 2,
+        "src": "/images/earth.jpg",
+        "alt": "earthbender",
+        "category": "anime"
+    },
+        {
+        "id": 3,
+        "src": "/images/fire.jpg",
+        "alt": "firebender",
+        "category": "anime"
+    },
+        {
+        "id": 4,
+        "src": "/images/water.jpg",
+        "alt": "waterbender",
+        "category": "anime"
+    },
+        {
+        "id": 7,
+        "src": "/images/emu.jpg",
+        "alt": "emu",
+        "category": "animals"
+    },
+        {
+        "id": 8,
+        "src": "/images/fox.jpg",
+        "alt": "fox",
+        "category": "animals"
+    },
+            {
+        "id": 9,
+        "src": "/images/gepard.jpg",
+        "alt": "gepard",
+        "category": "animals"
+    },
+        {
+        "id": 10,
+        "src": "/images/kenguru.jpg",
+        "alt": "kenguru",
+        "category": "animals"
+    },
+            {
+        "id": 11,
+        "src": "/images/lion.jpg",
+        "alt": "lion",
+        "category": "animals"
+    },
+        {
+        "id": 12,
+        "src": "/images/zebra.jpg",
+        "alt": "zebra",
+        "category": "animals"
+    }
+]
